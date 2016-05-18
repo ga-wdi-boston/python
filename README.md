@@ -13,9 +13,9 @@ Hey, Polyglots! Ready for another programming language?
 
 By the end of this, students should be able to:
 
--   Contrast Python REPL and interpreter with Ruby REPL and Node interpreter/REPL.
+-   Contrast Python REPL with Ruby REPL.
 -   Contrast basic language features and types from Python with basic language
-    features and types from JavaScript and Ruby.
+    features and types from Ruby.
 -   Write a simple script in Python.
 
 ## Preparation
@@ -24,6 +24,40 @@ By the end of this, students should be able to:
     this repository.
 
 ## Installation
+
+### OS X
+
+1.  `brew install pyenv`
+1.  Open `~/.bashrc` and add the following between Rbenv and Git configs:
+
+  ```bash
+  # Pyenv
+  export PYENV_ROOT=/usr/local/var/pyenv
+  eval "$(pyenv init -)"
+  ```
+
+1.  `pyenv install 3.5.1`
+1.  `pyenv global 3.5.1`
+1.  Python doesn't ship with the most up to date version of package manager
+pip, so upgrade pip : `pip install -upgrade pip`
+1.  `brew install pyenv-virtualenv`
+1.  Add the following to `~/.bashrc` under your additions from step 2:
+
+    ```bash
+    eval "$(pyenv virtualenv-init -)"
+    ```
+
+### Linux
+
+1.  `curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash`
+1.  Open `~/.bashrc` and add the following between Rbenv and Git configs:
+
+  ```bash
+  # Pyenv
+  export PATH="/root/.pyenv/bin:$PATH"
+  eval "$(pyenv init -)"
+  eval "$(pyenv virtualenv-init -)"
+  ```
 
 ## Outline
 
