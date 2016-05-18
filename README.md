@@ -75,11 +75,31 @@ using `pry` or `node`.
 To run Python scripts, simply run
 `python <filename.rb>` from the command line.
 
-**Hint:** to print to the console in Python, we use `print <string to print>`
+_Hint: to print to the console in Python, we use `print <string to print>`_
+
+Let's practice this. Take a minute to look at [lib/fizzbuzz.rb](lib/fizzbuzz.rb),
+then run the `fizzbuzz` script from the command line using
+`python lib/fizzbuzz.rb`.
 
 ## Core Syntax, Variables, and Operators
 
 ### Syntax
+
+**Parens** `()` in Python blocks are required as opposed to optional in Ruby.
+
+Similar to Ruby, there is a lack of semicolons in Python. Line breaks in your
+code are enough to denote the end of an expression.
+
+However, as you may have noticed from our `fizzbuzz` script, we are introduced
+to **colons** `:` throughout our code. Colons always come directly after the parens
+in function or loop blocks. Colons are also immediately followed by a new,
+indented line (this indentation is purposeful **whitespace**).
+
+Python's parens/colons/whitespace act similarly to Ruby's `end` for method
+declarations and loops.
+
+While whitespace in Ruby is essentially ignored, in Python, it is critical to
+ensuring working code. Otherwise, you'll run into an `IndentationError`.
 
 ### Variable Declaration
 
