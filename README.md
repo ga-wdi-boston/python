@@ -61,9 +61,21 @@ pip, so upgrade pip : `pip install -upgrade pip`
 
 ## Outline
 
+
+
 ## Foreword
 
-## REPL
+## Python REPL
+
+We'll be using Python's built-in REPL to practice what we learn today.
+
+Typing `python` onto the command line will bring you into this REPL, similar to
+using `pry` or `node`.
+
+To run Python scripts, simply run
+`python <filename.rb>` from the command line.
+
+**Hint:** to print to the console in Python, we use `print <string to print>`
 
 ## Core Syntax, Variables, and Operators
 
