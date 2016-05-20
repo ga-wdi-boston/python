@@ -79,6 +79,8 @@ then run the `fizzbuzz` script from the command line using
 
 ### Syntax
 
+Snake case lives on! Aka, `keep_your_variables_defined_this_way`.
+
 **Parens** `()` in Python are required around parameters as opposed to optional
  in Ruby.
 
@@ -232,13 +234,25 @@ It functions more as a completion handler.
 
 ## Functions
 
+Functions in Python are similar to Ruby methods (Python also has methods, but
+we only refer to them as such when they are functions of a Class).
+
+Aside from syntactical differences, the main difference to note is the need for
+an **explicit return**. Think JavaScript!
+
+Basic function structure:
+
+```python
+def function_example(param_one, param_two):
+  concat = "What a splendid function! I've got my {0} and {1}.".format(param_one, param_two)
+  return concat
+```
+
 ## Ruby vs JS :: Collections
 
 ### Arrays
 
 ### Hashes
-
-## Common Gotchas
 
 ## Additional Resources
 
