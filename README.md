@@ -256,6 +256,8 @@ def function_example(param_one, param_two):
 
 ## Additional Resources
 
+[Python's Documentation](https://docs.python.org/3/)
+
 ## [License](LICENSE)
 
 Source code distributed under the MIT license. Text and other assets copyright
