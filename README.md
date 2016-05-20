@@ -110,7 +110,7 @@ Variable declaration in Python is extremely similar to Ruby's. Variables can be
 >>> x = "WDI is top tier" # reassigns x to string value
 ```
 
-Also similar to Ruby, variables in Python *cannot* be called or stated without
+Also similar to Ruby, variables in Python _cannot_ be called or stated without
 being defined.
 
 ```python
@@ -120,13 +120,13 @@ NameError: name 'z' is not defined
 
 ### Operators
 
-|   |        Ruby        |        Python        |
-|---|:-------------------:|:-------------------:|
-| logical operators | `&&`, <code>&#124;&#124;</code>, `!` | `and`, `or`, `not` |
-| relational operators | `==` `!=` `>` `<` `>=` `<=` | `==` `!=` `>` `<` `>=` `<=` |
-| arithmetic operators | `+`, `-`, `*`, `/` `//`, `%` | `+`, `-`, `*`, `/`, `%` |
+|                      |        Ruby                          |        Python               |
+|:---------------------|:------------------------------------:|:---------------------------:|
+| logical operators    | `&&`, <code>&#124;&#124;</code>, `!` | `and`, `or`, `not`          |
+| relational operators | `==` `!=` `>` `<` `>=` `<=`          | `==` `!=` `>` `<` `>=` `<=` |
+| arithmetic operators | `+`, `-`, `*`, `/` `//`, `%`         | `+`, `-`, `*`, `/`, `%`     |
 
-##### Brief Aside: what's that weird double slash (`//`)?
+#### Brief Aside: Double Slash (`//`) Operator
 
 If you remember from Ruby, integer division will always return a whole integer.
 For best results, division with Floats returns most accurate results.
@@ -144,8 +144,8 @@ Note that operations on floats will still return floats no matter the operator.
 To convert between floats and integers, use:
 
 ```python
-int(14.5)       # => 14
-float(14)       # => 14.0
+>>> int(14.5)    # => 14
+>>> float(14)    # => 14.0
 ```
 
 ## Strings
@@ -251,9 +251,60 @@ def function_example(param_one, param_two):
 
 ## Ruby vs JS :: Collections
 
-### Arrays
+### Lists
 
-### Hashes
+Python lists are comparable to Ruby arrays. They store comma separated values
+of varying data types between square brackets `[]`.
+
+Lists are ordered, thus, indices can be leveraged to get or set their elements.
+
+```python
+wdi_base_langs = ["JavaScript", "Ruby", "SQL"]
+wdi_base_langs[2] # => "SQL"
+wdi_base_langs[0] = "JS" # => ["JS", "Ruby", "SQL"]
+```
+
+`len()` is used to get the length of a list in Python.
+
+```python
+len(wdi_base_langs) # => 3
+```
+
+We can merge lists together using the `+` operator:
+
+```python
+wdi_new_langs = ["Python"]
+all_wdi_langs = wdi_new_langs + wdi_base_langs # => ["JS", "Ruby", "SQL", "Python"]
+```
+
+#### List Methods
+
+We could have gone about adding "Python" to the end of the `wdi_base_langs`
+list by using `.append()`.
+
+```python
+wdi_base_langs.append("Python") # => ["JS", "Ruby", "SQL", "Python"]
+```
+
+Like Ruby, `.pop()` removes the last element from a Python list. `.append()`
+will add to the end of a list.
+
+We do not have built-in operators for removing or adding to the beginning of a
+list. As hackers, we've got some hacks, though.
+
+`.remove()` allows us to remove an element at any index. Thus, `list.remove(0)`
+would remove the first element from a list.
+
+We could implement our array merging to add to the beginning of a list. Look at
+the following:
+
+```python
+a = "first"
+b = ["second", "third"]
+[a] + b # => ["first", "second", "third"]
+```
+
+### Dictionaries
 
 ## Additional Resources
 
