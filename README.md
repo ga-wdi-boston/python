@@ -249,7 +249,7 @@ def function_example(param_one, param_two):
   return concat
 ```
 
-## Ruby vs JS :: Collections
+## Collections
 
 ### Lists
 
@@ -317,9 +317,52 @@ for lang in all_wdi_langs:
 
 ### Dictionaries
 
+Python dictionaries are very similar to other key-value objects we've seen.
+
+Dictionary keys **must** be unique. Creating a key-value pair for a key that
+already exists will simply reassign the value of the existing key.
+
+Keys can be either strings or numbers (or variables referencing one of those
+types).
+
+There are two ways of instantiating a Python dictionary:
+
+```python
+new_dict = dict()   # => {}
+# or
+new_dict = {}       # => {}
+
+example_dict = {
+  "key_one": "val one",
+  "key_two": "val two",
+  "key_three": "val three"
+}
+```
+
+To add or retrieve a key-value pair, we implement square bracket notation:
+
+```python
+new_dict["fun_key"] = "fresh"
+new_dict["fun_key"]    # => "fresh"
+```
+
+`.get()` is another option for retrieving a key's value.
+
+```python
+new_dict.get("fun_key") # => "fresh"
+```
+
+Dictionary defaults are a little different from Ruby. If it is unknown that a
+key you are retrieving exists, you can call `.get()` with a default value
+should it not exist.
+
+```python
+new_dict.get("no_key", "not there") # => "not there"
+```
+
 ## Additional Resources
 
-[Python's Documentation](https://docs.python.org/3/)
+-   [Python's Documentation](https://docs.python.org/3/)
 
 ## [License](LICENSE)
 
