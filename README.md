@@ -59,12 +59,6 @@ pip, so upgrade pip : `pip install -upgrade pip`
   eval "$(pyenv virtualenv-init -)"
   ```
 
-## Outline
-
-
-
-## Foreword
-
 ## Python REPL
 
 We'll be using Python's built-in REPL to practice what we learn today.
