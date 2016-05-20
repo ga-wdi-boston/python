@@ -122,6 +122,34 @@ NameError: name 'z' is not defined
 
 ### Operators
 
+|   |        Ruby        |        Python        |
+|---|:-------------------:|:-------------------:|
+| logical operators | `&&`, <code>&#124;&#124;</code>, `!` | `and`, `or`, `not` |
+| relational operators | `==` `!=` `>` `<` `>=` `<=` | `==` `!=` `>` `<` `>=` `<=` |
+| arithmetic operators | `+`, `-`, `*`, `/` `//`, `%` | `+`, `-`, `*`, `/`, `%` |
+
+##### Brief Aside: what's that weird double slash (`//`)?
+
+If you remember from Ruby, integer division will always return a whole integer.
+For best results, division with Floats returns most accurate results.
+
+In Python, this whole integer division behavior can be mirrored with the `//`
+operator.
+
+```python
+>>> 14.5 / 3    # => 4.833333
+>>> 14.5 // 3   # => 4.0
+```
+
+Note that operations on floats will still return floats no matter the operator.
+
+To convert between floats and integers, use:
+
+```python
+int(14.5)       # => 14
+float(14)       # => 14.0
+```
+
 ## Strings
 
 ### String interpolation
