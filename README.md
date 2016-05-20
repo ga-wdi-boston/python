@@ -103,6 +103,23 @@ ensuring working code. Otherwise, you'll run into an `IndentationError`.
 
 ### Variable Declaration
 
+Variable declaration in Python is extremely similar to Ruby's. Variables can be
+ defined without being previously declared. Variable reassignment is also as
+ flexible as Ruby's.
+
+```python
+>>> x = 2 # assigns x to numerical value 2
+>>> x = "WDI is top tier" # reassigns x to string value
+```
+
+Also similar to Ruby, variables in Python *cannot* be called or stated without
+being defined.
+
+```python
+>>> z
+NameError: name 'z' is not defined
+```
+
 ### Operators
 
 ## Strings
