@@ -227,6 +227,9 @@ else:
   print "done"
 ```
 
+Again, this `else` is optional and different in nature from a conditional else.
+It functions more as a completion handler.
+
 ## Functions
 
 ## Ruby vs JS :: Collections
