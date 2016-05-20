@@ -6,8 +6,9 @@ Hey, Polyglots! Ready for another programming language?
 
 ## Prerequisites
 
--   [ga-wdi-boston/js-basics](https://github.com/ga-wdi-boston/js-basics)
--   [ga-wdi-boston/js-reference-types](https://github.com/ga-wdi-boston/js-reference-types)
+-   [Ruby-vs-JS](https://github.com/ga-wdi-boston/ruby-vs-js)
+-   [Ruby-vs-JS-Arrays](https://github.com/ga-wdi-boston/ruby-vs-js-arrays)
+-   [Ruby-vs-JS-Hash-Dictionary](https://github.com/ga-wdi-boston/ruby-vs-js-hash-dictionary)
 
 ## Objectives
 
