@@ -79,17 +79,18 @@ then run the `fizzbuzz` script from the command line using
 
 ### Syntax
 
-**Parens** `()` in Python blocks are required as opposed to optional in Ruby.
+**Parens** `()` in Python are required around parameters as opposed to optional
+ in Ruby.
 
 Similar to Ruby, there is a lack of semicolons in Python. Line breaks in your
 code are enough to denote the end of an expression.
 
 However, as you may have noticed from our `fizzbuzz` script, we are introduced
-to **colons** `:` throughout our code. Colons always come directly after the parens
-in function or loop blocks. Colons are also immediately followed by a new,
-indented line (this indentation is purposeful **whitespace**).
+to **colons** `:` throughout our code. Colons always come directly after the
+first line of the block statement. Colons are also immediately followed by a
+new, indented line (this indentation is purposeful **whitespace**).
 
-Python's parens/colons/whitespace act similarly to Ruby's `end` for method
+Python's colons/whitespace combo act similarly to Ruby's `end` for method
 declarations and loops.
 
 While whitespace in Ruby is essentially ignored, in Python, it is critical to
@@ -187,7 +188,44 @@ be mapped to the parameter passed to `.format()` at said index.
 
 ### Conditionals
 
+Again, colons and whitespace are critical to working Python code. Aside from
+that and the use of `elif` vs. `elsif`, these should feel very similar to Ruby
+conditional statements.
+
+```python
+if x < 0:
+  print 'Negative'
+elif x == 0:
+  print 'Zero'
+else:
+  print 'Positive'
+```
+
 ### Loops
+
+Also like Ruby, Python employs `while` and `for` loops.
+
+Python also allows for an optional `else` statement with each of these. With
+`while` loops, the `else` statement is executed once the `while` condition is
+no longer true. With `for` loops, `else` is executed upon the loop's
+completion.
+
+```python
+count = 0
+while count < 5:
+   print count, " is  less than 5"
+   count = count + 1
+else:
+   print count, " is not less than 5"
+```
+
+```python
+count = 15
+for i in range(1,count):
+  print i
+else:
+  print "done"
+```
 
 ## Functions
 
