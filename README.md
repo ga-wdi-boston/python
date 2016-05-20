@@ -304,6 +304,17 @@ b = ["second", "third"]
 [a] + b # => ["first", "second", "third"]
 ```
 
+#### Looping Through Lists
+
+For loops with lists don't stray far from the loops we saw earlier.
+
+```python
+all_wdi_langs = ["JS", "Ruby", "SQL", "Python"]
+
+for lang in all_wdi_langs:
+  print lang
+```
+
 ### Dictionaries
 
 ## Additional Resources
