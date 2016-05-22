@@ -60,6 +60,12 @@ pip, so upgrade pip : `pip install -upgrade pip`
   eval "$(pyenv virtualenv-init -)"
   ```
 
+### Atom Linter
+
+We'll be using [linter-pylint](https://atom.io/packages/linter-pylint).
+
+`apm install linter-pylint`
+
 ## Python REPL
 
 We'll be using Python's built-in REPL to practice what we learn today.
