@@ -375,8 +375,7 @@ Python dictionaries are very similar to other key-value objects we've seen.
 Dictionary keys **must** be unique. Creating a key-value pair for a key that
 already exists will simply reassign the value of the existing key.
 
-Keys can be either strings or numbers (or variables referencing one of those
-types).
+Keys can be either strings or numbers.
 
 There are two ways of instantiating a Python dictionary:
 
@@ -412,6 +411,18 @@ should it not exist.
 ```python
 new_dict.get("no_key", "not there") # => "not there"
 ```
+
+## Lab: Revamp FizzBuzz
+
+In [lib/list_and_dict_buzz.rb](lib/list_and_dict_buzz.rb), build a more robust
+FizzBuzz from scratch. Create a dictionary containing keys `fizz`, `buzz`,
+`fizzbuzz`, and `other`, each with lists as values. As you iterate through all
+the numbers from 1 to max_num, add each number to one of the lists mentioned
+above; numbers divisible by 3 only should go into the `fizz` list, numbers
+divisible by 5 only should go into the `buzz` list, numbers divisible by both
+should go into the `fizzbuzz` list, and numbers divisible by neither should go
+into the "other" list. Finally, once you're done, print the resulting
+dictionary to check that your code works properly.
 
 ## Additional Resources
 
