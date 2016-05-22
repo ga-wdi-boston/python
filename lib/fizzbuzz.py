@@ -1,12 +1,13 @@
-def fizzbuzz(num):
-  for n in range(1,num):
-    if n % 3 == 0 and n % 5 == 0:
-        print 'FizzBuzz'
-    elif n % 3 == 0:
-        print 'Fizz'
-    elif n % 5 == 0:
-        print 'Buzz'
-    else:
-        print n
+def fizzbuzz(max_num):
+    """Loops through 1-max_num and prints message depending on evaluation of integer."""
+    for num in range(1, max_num):
+        if num % 3 == 0 and num % 5 == 0:
+            print 'FizzBuzz'
+        elif num % 3 == 0:
+            print 'Fizz'
+        elif num % 5 == 0:
+            print 'Buzz'
+        else:
+            print num
 
 fizzbuzz(20)

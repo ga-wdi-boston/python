@@ -245,9 +245,21 @@ Basic function structure:
 
 ```python
 def function_example(param_one, param_two):
+  """Example function returning string interpolation of parameters."""
   concat = "What a splendid function! I've got my {0} and {1}.".format(param_one, param_two)
   return concat
 ```
+
+#### Brief Aside: Docstrings
+
+You may have noticed something like
+
+`"""This function..."""`
+
+within each of our example functions. These are called `docstrings` and are
+conventionally used in Python to provide documentation throughout a codebase.
+Code will run fine without them, but that would stray from Python's conventions
+as well as throw you into linter message hell. Try them out!
 
 ## Collections
 
