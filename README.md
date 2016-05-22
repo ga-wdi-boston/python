@@ -165,7 +165,7 @@ To convert between floats and integers, use:
 >>> float(14)    # => 14.0
 ```
 
-### Lab
+## Lab: Practice Using Operators
 
 Let's get used to these operators.
 
@@ -284,6 +284,23 @@ within each of our example functions. These are called `docstrings` and are
 conventionally used in Python to provide documentation throughout a codebase.
 Code will run fine without them, but that would stray from Python's conventions
 as well as throw you into linter message hell. Try them out!
+
+## Lab: Build a Calculator
+
+In [lib/calculator.py](lib/calculator.py), create a calculator function that
+takes two parameters. The first should be the operation to be completed
+(`addition`, `subtraction`, `multiplication`, `division`). The second should be
+a list with the appropriate number of numbers to operate on. The function
+mapped to the appropriate operation should take the expected numbers by index
+from the list passed in and return back to you the result of the operation.
+
+We haven't discussed lists yet, but they are very similar to Ruby arrays. The
+syntax required for this is very similar to how you would approach this in
+Ruby. Lean on the knowledge you gained from the [Python vs Ruby study](https://github.com/ga-wdi-boston/python-vs-ruby-study/)!
+
+Remember, to run a Python script from the command line:
+
+`python <filename.py>`
 
 ## Collections
 
