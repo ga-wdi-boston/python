@@ -124,6 +124,17 @@ being defined.
 NameError: name 'z' is not defined
 ```
 
+### True and False
+
+In Python, true and false are represented by `True` and `False` (yes, case
+matters).
+
+The falsy values of Python are:
+
+`False` `None` `0` `0.0` `''` `[]` `{}`
+
+`None` is equivalent to Ruby's `nil`.
+
 ### Operators
 
 |                      |        Ruby                          |        Python               |
@@ -153,6 +164,13 @@ To convert between floats and integers, use:
 >>> int(14.5)    # => 14
 >>> float(14)    # => 14.0
 ```
+
+### Lab
+
+Let's get used to these operators.
+
+In your Python REPL from the command line, take some time to practice each
+logical, relational and artithmetic operator listed for you above.
 
 ## Strings
 
