@@ -51,6 +51,8 @@ pip, so upgrade pip : `pip install -upgrade pip`
 ### Linux
 
 1.  `curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash`
+1.  Python doesn't ship with the most up to date version of package manager
+pip, so upgrade pip : `pip install -upgrade pip`
 1.  Open `~/.bashrc` and add the following between Rbenv and Git configs:
 
   ```bash
